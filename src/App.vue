@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-carousel></vue-carousel>
+    <vue-carousel :slides="images" :timer="5"></vue-carousel>
   </div>
 </template>
 
@@ -11,6 +11,14 @@ export default {
   name: 'app',
   components: {
     VueCarousel
+  },
+  data() {
+    return {
+      images: [
+        'https://via.placeholder.com/150',
+        'https://via.placeholder.com/150'
+      ]
+    }
   }
 }
 </script>
